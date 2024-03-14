@@ -1,7 +1,6 @@
 # Objective
 
 Provide code to create reports on a different financial indicators from given data sources.
-Solution must include example reports generated from provided test data.
 
 # Brief
 
@@ -13,10 +12,10 @@ Your task is to build part of reporting pipeline to be executed on a daily basis
 
 ## Postgres Database
 
-Database contains granular transaction information.
+Database represents production service data with granular transaction information.
 You are free to use [scripts](./input-data/data) to bootstrap your own fresh database.
-Alternatively, using [docker-compose](https://www.docker.com/products/docker-desktop/) inside [input-data](./input-data) folder you can run
-```shell
+Alternatively, using [docker-compose](./input-data/docker-compose.yaml) inside you can run
+```shel
 docker compose up
 ```
 This will start a fresh postgres instance with all the data available.
@@ -82,5 +81,6 @@ Given CSV export of daily volumes from our bank partner and same Postgres databa
 
 * You are free to use any tech stack you like for the job, however sources of data are predefined (i.e. postgres and CSV file)
 * Solution should be documented - i.e. people can replicate the workflow and generate new reports themselves.
-* All necessary code to use the solution should be provided.
+* Provide steps how to run report generation pipeline. 
+* Solution must include reports generated from provided test data.
 * Bonus points for any kind of visualisation of the data you can provide.
