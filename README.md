@@ -4,9 +4,9 @@ Provide code to create reports on a different financial indicators from given da
 
 # Brief
 
-We have a company which processes miscelanious transactions for a few major clients.
+We have a company which processes miscellaneous transactions for a few major clients.
 Company pays out each transaction through the bank partner.
-Revenue earned on every transaction company processes, it is not deducte from actual payment but just tracked with every transaction for reference.
+Revenue is earned on every transaction the company processes, it is not deducted from actual payment but just tracked with every transaction for reference.
 
 Your task is to build part of reporting pipeline to be executed on a daily basis for company financial performance.
 
@@ -15,7 +15,7 @@ Your task is to build part of reporting pipeline to be executed on a daily basis
 Database represents production service data with granular transaction information.
 You are free to use [scripts](./input-data/data) to bootstrap your own fresh database.
 Alternatively, using [docker-compose](./input-data/docker-compose.yaml) inside you can run
-```shel
+```shell
 docker compose up
 ```
 This will start a fresh postgres instance with all the data available.
@@ -62,17 +62,17 @@ Structure of CSV file is the following
 
 ## Part 1
 
-Using database tables provide following repots
+Using database tables provide following reports
 
-* Revenue per month per client - report how much revenue in EUR earned for each client every month.
+* Revenue per month per client - Report how much revenue in EUR earned for each client every month.
 
-* Transaction distribution - analyse basket size of transactions to give insights on amounts spent by customer over time. 
+* Transaction distribution - Analyse the basket size of transactions to give insights on amounts spent by customer over time. 
 
 ## Part 2
 
-It appears there is are bug in our systems - not all transactions go through the partner bank as expected.
+It appears there is a bug in our systems - not all transactions go through the partner bank as expected.
 
-Given CSV export of daily volumes from our bank partner and same Postgres database try to identify:
+Given the CSV export of daily volumes from our bank partner and same Postgres database try to identify:
 
 * Which days have mismatches of data.
 * Potential transactions which might be missing from bank account export.
