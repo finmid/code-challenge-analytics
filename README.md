@@ -23,12 +23,12 @@ You can connect to it on localhost:5432 with login `postgres` and password `finm
 
 ### Table `exchange_rates`
 
-|column         | type         | description                            |
-|---------------|--------------|----------------------------------------|
-|date           | DATE         | Date of the currency conversion        |
-|sell_currency  | TEXT         | ISO code of currency to buy            |
-|buy_currency   | TEXT         | ISO code of selling currency           |
-|rate           | DECIMAL      | at which rate currency will be bought  |
+|column         | type         | description                           |
+|---------------|--------------|---------------------------------------|
+|date           | DATE         | Date of the currency conversion       |
+|sell_currency  | TEXT         | ISO code of currency to sell          |
+|buy_currency   | TEXT         | ISO code of buying currency           |
+|rate           | DECIMAL      | at which rate currency will be bought |
 
 ### Table `transactions`
 
